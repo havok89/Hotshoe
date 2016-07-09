@@ -5,19 +5,7 @@ INSERT INTO `hotshoe_client` (`clientID`, `userName`, `firstName`, `lastName`, `
 
 
 
-CREATE TABLE IF NOT EXISTS `hotshoe_gallery` (
-  `galID` int(11) NOT NULL AUTO_INCREMENT,
-  `galTitle` varchar(250) NOT NULL,
-  `galLocation` varchar(250) NOT NULL,
-  `galDescription` text NOT NULL,
-  `galREF` varchar(5) NOT NULL,
-  `galWatermark` int(11) NOT NULL,
-  `galWatermarkThumb` int(11) NOT NULL,
-  `galHeaderImage` varchar(250) NOT NULL,
-  `galHeaderImageEnable` int(11) NOT NULL,
-  `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`galID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;~
+CREATE TABLE IF NOT EXISTS `hotshoe_gallery` (  `galID` int(11) NOT NULL AUTO_INCREMENT,  `galTitle` varchar(250) NOT NULL,  `galLocation` varchar(250) NOT NULL,  `galDescription` text NOT NULL,  `galREF` varchar(5) NOT NULL,  `galWatermark` int(11) NOT NULL,  `galWatermarkThumb` int(11) NOT NULL,  `galHeaderImage` varchar(250) NOT NULL,  `galHeaderImageEnable` int(11) NOT NULL,  `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,  PRIMARY KEY (`galID`)) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;~
 
 
 
@@ -38,25 +26,13 @@ INSERT INTO `hotshoe_images` (`imageID`, `galID`, `image`, `thumb`, `order`) VAL
 
 
 
-CREATE TABLE IF NOT EXISTS `hotshoe_sessions` (  `session_id` varchar(40) NOT NULL DEFAULT '0',
-  `ip_address` varchar(45) NOT NULL DEFAULT '0',  `user_agent` varchar(120) NOT NULL,  `last_activity` int(10) unsigned NOT NULL DEFAULT '0',  `user_data` text NOT NULL,  PRIMARY KEY (`session_id`),  KEY `last_activity_idx` (`last_activity`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;~
+CREATE TABLE IF NOT EXISTS `hotshoe_sessions` (  `session_id` varchar(40) NOT NULL DEFAULT '0',  `ip_address` varchar(45) NOT NULL DEFAULT '0',  `user_agent` varchar(120) NOT NULL,  `last_activity` int(10) unsigned NOT NULL DEFAULT '0',  `user_data` text NOT NULL,  PRIMARY KEY (`session_id`),  KEY `last_activity_idx` (`last_activity`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;~
 
 
 
 
 
-CREATE TABLE IF NOT EXISTS `hotshoe_settings` (
-  `siteID` int(11) NOT NULL,
-  `siteTitle` text NOT NULL,
-  `siteDescription` text NOT NULL,
-  `siteLogo` text NOT NULL,
-  `siteWatermark` varchar(250) NOT NULL,
-  `siteThumbWatermark` varchar(250) NOT NULL,
-  `siteTheme` varchar(250) NOT NULL,
- 
- `siteLang` varchar(250) NOT NULL,  `siteFooter` text NOT NULL,
-  UNIQUE KEY `siteID` (`siteID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;~
+CREATE TABLE IF NOT EXISTS `hotshoe_settings` (  `siteID` int(11) NOT NULL,  `siteTitle` text NOT NULL,  `siteDescription` text NOT NULL,  `siteLogo` text NOT NULL,  `siteWatermark` varchar(250) NOT NULL,  `siteThumbWatermark` varchar(250) NOT NULL,  `siteTheme` varchar(250) NOT NULL,  `siteLang` varchar(250) NOT NULL,  `siteFooter` text NOT NULL,  UNIQUE KEY `siteID` (`siteID`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;~
 
 
 
