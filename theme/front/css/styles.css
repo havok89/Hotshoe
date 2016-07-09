@@ -1,0 +1,175 @@
+.jumbotron.errorpadding {padding-top:60px;padding-bottom:60px;background:#eee;}
+.jumbotron.pagepadding {padding-top:60px;padding-bottom:0px;background:#eee;}
+span.ref {text-transform:uppercase;}
+.jumbotron.jumbo-padding {padding-top:100px;padding-bottom:60px;background:#eee;}
+/* loader */
+#preloader {
+    background: #ffffff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.close {
+    background-color: rgb(25, 25, 25) !important;
+    border: 1px solid rgb(255, 255, 255) !important;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    height: 25px;
+    opacity: 1;
+    padding: 5px 8px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 25px;
+    z-index: 1032;
+}
+
+
+#masonry hr {border-color: #ccc !important;}
+
+.jumbotron.errorpadding img {margin-bottom:15px;}
+.jumbotron.text-center img {display:block;margin:0 auto;}
+#list img {width:100%;}
+#masonry .row, #masonry-content .row {margin-right:0;margin-left:0}
+.item {transition:0.4s;}
+.hero-image {width:100%;}
+  .gallery_box {min-height: 305px;}
+#list
+{
+    width: 100%;
+    overflow: hidden;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 0; /* 30px */
+    -webkit-column-fill: auto;
+    -moz-column-count: 4;
+    -moz-column-gap: 0; /* 30px */
+    -moz-column-fill: auto;
+    column-count: 4;
+    column-gap: 0; /* 30px */
+    column-fill: auto;
+}
+    .item
+    {
+        margin-bottom: 0; /* 15px 30px */
+      /* This code - god bless   */
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -o-column-break-inside: avoid;
+  -ms-column-break-inside: avoid;
+  column-break-inside: avoid;
+  -webkit-backface-visibility: hidden;
+  }
+ 
+ 
+
+#masonry div img {width:100%;}
+.purge {clear:both;}
+.navbar-brand img {
+    height: 36px!important;
+}
+.gallery_box {border:1px solid #ddd;background:#fff;}
+.navbar-brand {
+    float: left!important;
+    font-size: 18px!important;
+    line-height: 20px!important;
+    padding: 12px 15px;
+	height: 60px!important;
+}
+.notice {padding-left:15px;}
+.alert {
+    background-color: #e7cfcd;
+    border: 1px solid #edaba5;
+    border-radius: 4px;
+    color: #e74c3c;
+    margin-bottom: 18px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.navbar-nav > li > a {
+    padding-bottom: 20px!important;
+    padding-top: 20px!important;
+}
+
+.btn-lg, .btn-sm, .btn-xs {margin:5px 0;display:inline-block;}
+.row h1,.row .h1,.row h2,.row .h2,.row h3,.row .h3 {margin-bottom: 15px;}
+.list-group-item > a > .badge {float: right;}
+.meta {font-size:0.8em;}
+.text-right {text-align:right;}
+.text-left {text-align:left;}
+.float-right {float:right;}
+.float-left {float:left;}
+@media only screen and ( max-width: 40em ) /* 640px */
+{
+    #list
+    {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 0; /* 15px */
+        -moz-column-count: 2;
+        -moz-column-gap: 0; /* 15px */
+        column-count: 2;
+        column-gap: 0; /* 15px */
+    }
+        .item
+        {
+            margin-bottom: 0; /* 15px */
+        }
+}
+@media only screen and ( max-width: 20em ) /* 320px */
+{
+    #list
+    {
+        -webkit-column-count: auto;
+        -moz-column-count: auto;
+        column-count: auto;
+	}
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+z-index: 9999;
+  position: absolute;
+  top: 50%;
+  margin: -5px auto 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #3498db;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
